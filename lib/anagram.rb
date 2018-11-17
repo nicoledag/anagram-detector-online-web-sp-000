@@ -11,7 +11,6 @@ class Anagram
 
   def match(arr)
     arr.keep_if { |str|  str.split(' ').sort == name.split(' ').sort}
-
   end
 
 
