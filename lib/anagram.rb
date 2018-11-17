@@ -10,9 +10,9 @@ class Anagram
   end
 
   def match(arr)
-  
 
-    words.select do |str|  w.include?(self.word)
+
+    arr.select do |str|  w.include?(self.word)
     end
   end
 
