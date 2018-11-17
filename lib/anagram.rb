@@ -10,7 +10,7 @@ class Anagram
   end
 
   def match(arr)
-    arr.select do |str|
+    arr.map do |str|
       name.split('').sort == str.split('').sort
     end
   end
