@@ -12,8 +12,8 @@ class Anagram
   def match(arr)
 
 
-    arr.select do |str|  w.include?(self.word)
-    end
+    arr.select { |str| name.split(" ").sort  str.split(" ").sort }
+    
   end
 
 
