@@ -10,8 +10,10 @@ class Anagram
   end
 
   def match(arr)
-    binding.pry
-    arr.keep_if do |str| name.split('').sort == str.split('').sort
+
+    arr.keep_if do |str|
+binding.pry
+      name.split('').sort == str.split('').sort
     end
   end
 
