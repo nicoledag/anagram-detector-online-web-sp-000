@@ -3,16 +3,15 @@ require 'pry'
 
 class Anagram
 
-  attr_accessor :word
+  attr_accessor :name
 
-  def initialize(word)
-    @word = word
+  def initialize(name)
+    @wname = name
   end
 
   def match(arr)
 
-
-    arr.keep_if { |str|  str.split(' ').sort == word.split(' ').sort}
+    arr.keep_if { |str|  str.split(' ').sort == name.split(' ').sort}
 
   end
 
