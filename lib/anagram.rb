@@ -12,8 +12,8 @@ class Anagram
   def match(arr)
 
 
-    arr.map { |str| name.split(" ").sort  str.split(" ").sort }
-    
+    arr.map { |str| name.split(" ").sort == str.split(" ") }
+
   end
 
 
