@@ -12,7 +12,7 @@ class Anagram
   def match(arr)
 
 
-    arr.select { |str| name.split(" ").sort  str.split(" ").sort }
+    arr.map { |str| name.split(" ").sort  str.split(" ").sort }
     
   end
 
