@@ -10,7 +10,7 @@ class Anagram
   end
 
   def match(arr)
-    arr.keep_if do |str|  str.split(' ').sort == name.split(' ').sort
+    arr.keep_if do |str| name.split(' ').sort == str.split(' ').sort
     end
   end
 
